@@ -10,46 +10,70 @@ Empirica.onGameStart(({ game }) => {
   round0.addStage({ name: "advertiseProduct", duration: 240 });
 
   const round1 = game.addRound({
+    name: "Raise",
+    task: "raise",
+  });
+  round1.addStage({ name: "Raise1", duration: 140 });
+  
+  const round2 = game.addRound({
     name: "Results",
     task: "results",
   });
-  round1.addStage({ name: "Result", duration: 140 });
+  round2.addStage({ name: "Result", duration: 140 });
 
-  const round2 = game.addRound({
+  const round3 = game.addRound({
     name: "Advertise",
     task: "advertise2",
   });
-  round2.addStage({ name: "advertiseProduct", duration: 240 });
-  
-  const round3 = game.addRound({
-    name: "Results",
-    task: "results2",
-  });
-  round3.addStage({ name: "Result", duration: 140 });
+  round3.addStage({ name: "advertiseProduct", duration: 240 });
 
   const round4 = game.addRound({
-    name: "Advertise",
-    task: "advertise3",
+    name: "Raise",
+    task: "raise2",
   });
-  round4.addStage({ name: "advertiseProduct", duration: 240 });
+  round4.addStage({ name: "Raise2", duration: 140 });
   
   const round5 = game.addRound({
     name: "Results",
-    task: "results3",
+    task: "results2",
   });
   round5.addStage({ name: "Result", duration: 140 });
 
   const round6 = game.addRound({
     name: "Advertise",
-    task: "advertise4",
+    task: "advertise3",
   });
   round6.addStage({ name: "advertiseProduct", duration: 240 });
-  
+
   const round7 = game.addRound({
+    name: "Raise",
+    task: "raise3",
+  });
+  round7.addStage({ name: "Raise3", duration: 140 });
+  
+  const round8 = game.addRound({
+    name: "Results",
+    task: "results3",
+  });
+  round8.addStage({ name: "Result", duration: 140 });
+
+  const round9 = game.addRound({
+    name: "Advertise",
+    task: "advertise4",
+  });
+  round9.addStage({ name: "advertiseProduct", duration: 240 });
+
+  const round10 = game.addRound({
+    name: "Raise",
+    task: "raise4",
+  });
+  round10.addStage({ name: "Raise4", duration: 140 });
+  
+  const round11 = game.addRound({
     name: "Game Results",
     task: "results4",
   });
-  round7.addStage({ name: "Result", duration: 140 });
+  round11.addStage({ name: "Result", duration: 140 });
 
 });
 

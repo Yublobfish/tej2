@@ -7,6 +7,8 @@ import { Loading } from "@empirica/core/player/react";
 import React from "react";
 import { Advertisement } from "./examples/Advertise";
 import { SalesResults } from "./examples/Results";
+import { Tradeoff } from "./examples/Raise";
+
 
 export function Stage() {
   const player = usePlayer();
@@ -27,20 +29,35 @@ export function Stage() {
   switch (round.get("task")) {
     case "advertise":
       return < Advertisement roundNumber={1}/>;
+    case "raise":
+      return <Tradeoff roundNumber={1}/>;
     case "results":
       return <SalesResults roundNumber={1}/>;
+      
     case "advertise2":
-      return <Advertisement roundNumber={2}/>;    
+      return <Advertisement roundNumber={2}/>;   
+    case "raise2":
+      return <Tradeoff roundNumber={2}/>; 
     case "results2":
       return <SalesResults roundNumber={2}/>;
+
+
     case "advertise3":
-      return <Advertisement roundNumber={3}/>;    
+      return <Advertisement roundNumber={3}/>;
+    case "raise3":
+      return <Tradeoff roundNumber={3}/>;    
     case "results3":
       return <SalesResults roundNumber={3}/>;
+
+
     case "advertise4":
-      return <Advertisement roundNumber={4}/>;    
+      return <Advertisement roundNumber={4}/>;  
+    case "raise4":
+      return <Tradeoff roundNumber={4}/>;  
     case "results4":
       return <SalesResults roundNumber={4}/>;
+
+
     default:
       return <div>Unknown task</div>;
   }
