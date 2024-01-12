@@ -61,7 +61,7 @@ export function JellyBeans() {
       <p>
         {isResultStage
           ? "Result"
-          : "Guess how many Jelly Beans are in the pile below."}
+          : "Guess how many Jelly Beans are in the pile below yopyoyo yubo is editing."}
       </p>
 
       {jelly}
